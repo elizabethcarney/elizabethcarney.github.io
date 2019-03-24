@@ -1,0 +1,176 @@
+/*
+/ Fonts
+*/
+
+@font-face {
+    font-family: hurson;
+    src: url(../fonts/hurson_clean.ttf);
+}
+@font-face {
+    font-family: library;
+    src: url(../fonts/library_soft.otf);
+}
+@font-face {
+    font-family: quesha;
+    src: url(../fonts/quesha.ttf);
+}
+@font-face {
+    font-family: skarpa;
+    src: url(../fonts/skarpa.ttf);
+}
+@font-face {
+    font-family: neo;
+    src: url(../fonts/neoteric.ttf);
+}
+
+/*
+/ Main
+*/
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.parallax {
+    /* Image will not load if it has been automatically uploaded to Cloud locally */
+    background-image: url('../img/night-sky.jpg');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.welcome {
+    top: 0;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+#my-name {
+    padding-top: 1em;
+    padding-bottom: .3em;
+    font-size: 6em;
+    font-family: hurson;
+}
+.welcome:hover { cursor: default; }
+#int-resume {
+    font-size: 2.5em;
+    font-family: library;
+    animation: int-resume 2s 0s ease infinite;
+    -moz-animation: int-resume 2s 0s ease infinite; /* Firefox */
+    -webkit-animation: int-resume 2s 0s ease infinite; /* Safari and Chrome */
+}
+@keyframes int-resume {
+    0% {
+        color: #A6AFFF;
+        text-shadow: none;
+    }
+    100% {
+        color: #A6AFFF;
+        text-shadow: none;
+    }
+    50% {
+        color: white;
+        text-shadow: 2px 2px 8px white, -2px -2px 8px white;
+    }
+  }
+
+.spacer {
+    height: 5%;
+}
+
+.education {
+    position: relative;
+    height: 80%;
+    width: 100%;
+    background-image: url('../img/smith-college.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: visible;
+}
+#notepad {
+    margin-left: 5%;
+    margin-top: -5%;
+    position: absolute;
+    transform: rotate(-5deg);
+    width: 50%;
+    height: auto;
+    min-width: 400px;
+}
+
+.projects {
+    height: 120%;
+}
+#projtitle {
+    color: white;
+    text-align: center;
+    font-family: hurson;
+    font-size: 3.5em;
+}
+.project {
+    height: 20%;
+    width: 50%;
+    margin-bottom: 2%;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    overflow: visible;
+    position: relative;
+    z-index: 3;
+}
+.projtext {
+    position: absolute;
+    z-index: 5;
+    margin-top: 3%;
+    font-family: hurson;
+    font-size: 2em;
+}
+.ptleft {
+    margin-left: 25%;
+}
+.ptright {
+    margin-left: 5%;
+}
+.ptbody {
+    position: absolute;
+    z-index: 5;
+    margin-top: 12%;
+    font-family: neo;
+    font-size: 1em;
+}
+.ptbodyleft {
+    margin-left: 25%;
+}
+.ptbodyright {
+    margin-left: 5%;
+    margin-right: 25%;
+}
+.circleimg {
+    position: relative;
+    z-index: 3;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.circleft {
+    margin-left: -10%;
+}
+.circright {
+    margin-left: 80%;
+}
+#project1 {
+    margin-left: 15%;
+}
+#project2 {
+    margin-left: 35%;
+}
+#project3 {
+    margin-left: 15%;
+}
+
